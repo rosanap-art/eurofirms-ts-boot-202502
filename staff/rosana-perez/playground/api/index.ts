@@ -1,29 +1,16 @@
-type User = {
-    id: string,
-    name: string,
-    email: string,
-    username: string,
-    password: string
-}
+import { User, Post } from "./types"
 
-type Post = {
-    id: string,
-    author: string,
-    image: string,
-    text: string,
-    date: Date
-}
+const peter: User = { id: "abc-123", name: "Peter Pan", email: "peter@pan.com", username: "peterpan", password: "123123123" }
+const wendy: User = { id: "def-456", name: "Wendy Darling", email: "wendy@darling.com", username: "wendydarling", password: "123123123" }
+const pepito: User = { id: "ghi-789", name: "Pepito Grillo", email: "pepito@grillo.com", username: "pepitogrillo", password: "123123123" }
+const campa: User = { id: "jkl-012", name: "Campa Nilla", email: "campa@nilla.com", username: "campanilla", password: "123123123" }
 
-const peter: User = { id: 'abc-123', name: 'Peter Pan', email: 'peter@pan.com', username: 'peterpan', password: '123123123' }
-const wendy: User = { id: 'def-456', name: 'Wendy Darling', email: 'wendy@darling.com', username: 'wendydarling', password: '123123123' }
-const pepito: User = { id: 'ghi-789', name: 'Pepito Grillo', email: 'pepito@grillo.com', username: 'pepitogrillo', password: '123123123' }
-const campa: User = { id: 'jkl-012', name: 'Campa Nilla', email: 'campa@nilla.com', username: 'campanilla', password: '123123123' }
-
-const post1: Post = { id: 'mno-345', author: 'abc-123', image: 'https://www.quever.news/u/fotografias/m/2023/6/19/f850x638-53579_131068_5443.jpg', text: 'this is me', date: new Date() }
+const post1: Post = { id: "mno-345", author: "abc-123", image: "https://www.quever.news/u/fotografias/m/2023/6/19/f850x638-53579_131068_5443.jpg", text: "this is me", date: new Date() }
 
 // const users: Array<User> = []
 const users: User[] = [] //users contains elements of User type 
 const posts: Post[] = []
+
 users.push(peter)
 users.push(wendy)
 users.push(pepito)

@@ -1,0 +1,33 @@
+type User = {
+    id: string,
+    name: string,
+    email: string,
+    username: string,
+    password: string
+}
+
+type Post = {
+    id: string,
+    author: string,
+    image: string,
+    text: string,
+    date: Date
+}
+
+type Data = {
+    uuid(): string,
+    users: User[],
+    posts: Post[] // posts: Array<Post>
+}
+
+type Logic = {
+    registerUser(name: string, email: string, username: string, password: string): void, //registerUser: () => void
+
+    authenticateUser(username: string, password: string): string,
+}
+export {
+    User,
+    Post,
+    Data,
+    Logic
+}
