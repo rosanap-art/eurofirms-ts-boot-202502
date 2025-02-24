@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "npx tsc --lib es2015,dom *.ts",
-    "test": "tsx logic.test.ts"
+    "compile": "npx tsc --lib es2015,dom ./*.ts",
+    "test": "tsx logic.test.ts",
+    "test-inspect": "tsx --inspect-brk logic.test.ts"
   },
   "keywords": [],
   "author": "",
